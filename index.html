@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered 3D Graphics Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add any necessary JavaScript libraries -->
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js" integrity="sha512-pgK6Wo8doipc/IPQ0ilH3b47ww01345nR9ud1/6Qp0n+lQlEW9zuw6JhysRcUpBY4yKuVZjn1MAkDxbnncuGsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js" integrity="sha512-/WaZCC76Yn6MLEoK6b9np9yiLBet/RngBS33X1P0SHuag6j2E0e5rT7jbA2CvXCydN6+FkDYNx8FBM+vkzsthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="flex h-screen bg-gray-100">
+    <div id="container" class="m-auto flex p-4 bg-white shadow-lg rounded-lg">
+        <div id="chat-interface" class="flex flex-col mr-4">
+            <div id="framework-selection" class="mb-4">
+                <button id="btn-threejs" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Three.js</button>
+                <button id="btn-p5js" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">p5.js</button>
+                <button id="btn-plain-js" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Plain JavaScript</button>
+            </div>
+            <textarea id="prompt-input" class="border-2 border-gray-300 p-2 mb-4" placeholder="Enter your prompt here..."></textarea>
+            <button id="generate-btn" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Generate</button>
+        </div>
+        <div id="graphics-output" class="flex-1 bg-gray-300 rounded p-4">
+            <!-- Graphics will be rendered here -->
+        </div>
+    </div>
+
+    <script src="path/to/your/javascript.js"></script>
+</body>
+</html>
